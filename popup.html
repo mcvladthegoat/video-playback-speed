@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Set video playback rate</title>
+      <style>
+      body {
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        background: white;
+      }
+      div {
+        cursor: pointer;
+        text-align: center;
+        padding: 1px 3px;
+        font-family: sans-serif;
+        font-size: 16px;
+        width: 140px;
+        background: #ffffff;
+        border-bottom: 1px solid;
+        padding: 15px 0;
+      }
+      div:hover {
+        background: #aaaaaa;
+      }
+      div:first-child:hover {
+        background: #ffffff;
+        cursor: default;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div>Select playback rate for current page</div>
+    <div data-rate="1">x1</div>
+    <div data-rate="1.25">x1.25</div>
+    <div data-rate="1.5">x1.5</div>
+    <div data-rate="2">x2</div>
+  </body>
+</html>
