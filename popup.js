@@ -1,6 +1,6 @@
 const  onClickHandler = (e) => {
   chrome.tabs.executeScript(null, {
-    code: `document.getElementsByTagName('video')[0].playbackRate = ${e.target.getAttribute('data-rate')}`
+    code: `var a = document.getElementsByTagName('video');for(let i=0;i<a.length;i++){a[i].playbackRate = ${e.target.getAttribute('data-rate')}}`
   });
   window.close();
 }
